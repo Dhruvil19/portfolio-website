@@ -25,6 +25,9 @@ header {
   color: #333;
   padding: 20px 0;
   border-bottom: 2px solid #eee; /* Light border for separation */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header .container {
