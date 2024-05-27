@@ -1,77 +1,5 @@
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    margin: 20px 0;
-  }
-  
-  form label {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-  }
-  
-  form button {
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    border: none;
-    margin-top: 10px;
-  }
-  @media (max-width: 600px) {
-    header {
-      text-align: left;
-    }
-  
-    nav ul {
-      display: block;
-    }
-  
-    nav ul li {
-      display: block;
-      margin: 5px 0;
-    }
-  }
-     
-/* Reset some default styles */
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -81,19 +9,27 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 header {
   background: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -103,6 +39,8 @@ h1 {
 
 nav ul {
   list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
 nav ul li {
@@ -113,19 +51,30 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
   background-color: #555;
+  color: #fff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 40px 0;
 }
 
 section {
+  background: #fff;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 form label {
@@ -138,6 +87,8 @@ form textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 form button {
@@ -145,18 +96,24 @@ form button {
   background: #333;
   color: #fff;
   border: none;
+  border-radius: 4px;
   margin-top: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
   background: #555;
 }
-nav ul li a:hover {
-  background-color: #555;
-  color: #fff; /* Change text color to white on hover */
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-nav ul li a:hover {
-  background-color: #555; /* Change background color on hover */
-  color: #fff; /* Change text color to white on hover */
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
