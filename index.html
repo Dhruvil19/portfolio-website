@@ -1,167 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="container">
       <a href="#home" class="logo">
-        <img src="image/logo.jfif" alt="My Logo" class="logo-img"> <!-- Add your logo image path -->
+        <img src="image/Dhruvil-Profile.png" alt="My Logo" class="logo-img"> <!-- Add your logo image path -->
       </a>
-      <h1>My Portfolio</h1>
+      <h1>Meniya Dhruvil</h1>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Experince">Experince</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
+
   <main class="container">
-    <!-- Breadcrumbs -->
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#home">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Current Page</li>
-      </ol>
-    </nav>
+
 
     <!-- Home Page -->
-    <section id="home" class="hero-section">
+    <section class="hero-section" id="home">
       <div class="hero-content">
-        <h2>Welcome to My Portfolio</h2>
+        <h2 class="typewriter" data-text="Welcome to my portfolio"></h2>
         <p>Hi, I'm Dhruvil. I'm a web developer.</p>
         <a href="#projects" class="cta-button">View My Work</a>
       </div>
     </section>
 
-    <!-- Introduction Section -->
-    <section id="introduction" class="section">
-      <div class="content">
-        <h2>Introduction</h2>
-        <p>A brief introduction about who you are and what you do.</p>
-      </div>
-    </section>
-    
-    <!-- Featured Work Section -->
+
+    <!-- Featured Work Section
     <section id="featured-work" class="section">
       <div class="content">
         <h2>Featured Work</h2>
         <div class="grid">
-          <!-- Featured Work Items -->
-          <div class="grid-item">
-            <img src="path/to/project1.png" alt="Project 1">
+          Featured Work Items -->
+          <!-- <div class="grid-item">
+            <img src="image/Dhruvil-Profile.png" alt="Project 1">
             <h3>Project 1</h3>
             <p>Detailed description of Project 1.</p>
           </div>
           <div class="grid-item">
-            <img src="path/to/project2.png" alt="Project 2">
+            <img src="image/Dhruvil-Profile.png" alt="Project 2">
             <h3>Project 2</h3>
             <p>Detailed description of Project 2.</p>
           </div>
           <!-- Add more featured work items as needed -->
-        </div>
+        <!-- </div>
       </div>
-    </section>
-    
+    </section> --> -->
+
     <!-- Call to Action Section -->
-    <section id="cta" class="section">
+    <!-- <section id="cta" class="section">
       <div class="content">
         <h2>Ready to Get Started?</h2>
         <p>Encourage visitors to explore your work or contact you.</p>
         <a href="#contact" class="cta-button">Contact Me</a>
       </div>
-    </section>
-    
-    <!-- About Page -->
-    <section id="about" class="section">
-      <div class="content">
-        <h2>About Me</h2>
-        <div class="profile">
-          <img src="path/to/profile.jpg" alt="Profile Photo">
+    </section> -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h1>About Me</h1>
+        <div class="bio-photo-container">
           <div class="bio">
-            <p>Hi, I'm Dhruvil. I'm a web developer with experience in the MERN stack.</p>
-            <h3>Skills</h3>
-            <div class="skills">
-              <div class="skill">
-                <span>HTML</span>
-                <div class="progress-bar" style="width: 90%;"></div>
-              </div>
-              <div class="skill">
-                <span>CSS</span>
-                <div class="progress-bar" style="width: 80%;"></div>
-              </div>
-              <!-- Add more skills as needed -->
+            <p>Hello! I am Meniya Dhruvil, a passionate web developer specializing in front-end development. I have
+              completed my diploma in computer science and engineering, and have gained valuable experience through
+              internships where I learned HTML, CSS, JavaScript, React, and Web 3.0 technologies. I aim to bring
+              innovative solutions to the web development world.</p>
+            <div class="resume">
+              <a href="dHRUVIL.pdf" target="_self" class="btn-download" download>Download Resume</a>
+              <a href="dHRUVIL.pdf" class="btn-view">View Resume</a>
             </div>
+          </div>
+          <div class="photo">
+            <img src="image/Dhruvil-Profile.png" alt="Dhruvil's Profile Photo">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Page -->
+
+    <!-- About Page -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <img src="path/to/project1.png" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Detailed description of Project 1.</p>
+      <div class="content">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="grid-item">
+            <img src="image/Designer.jpeg " alt="Project 1">
+            <h3>Project 1</h3>
+            <!-- <p>Project Title: Hostel Admission System
+
+              Technologies Used: PHP, MySQL, HTML, CSS, JavaScript
+              
+              Project Description
+              Developed a web-based Hostel Admission System to manage room availability and student applications, ensuring fair seat allocation based on merit and category.Key Features:
+
+              Room Management: Tracks room availability, each room accommodating 3 students.
+              Student Application: Online form collecting personal, academic, and category details.
+              Merit-Based Allocation: Allocates seats based on academic scores.
+              Category Quota Management: Ensures adherence to reservation policies.
+              Admin Panel: Manages applications, updates statuses, and generates reports.
+              Student Dashboard: Allows students to check application status and notifications.
+              Responsibilities:
+              
+              Developed backend with PHP and MySQL.
+              Designed the database schema.
+              Created dynamic UI with HTML, CSS, and JavaScript.
+              Implemented allocation algorithms.
+              Tested and debugged the application.</p>
+          </div>
+        -->
         </div>
-        <div class="grid-item">
-          <img src="path/to/project2.png" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Detailed description of Project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
       </div>
     </section>
 
     <!-- Contact Page -->
-    <section id="contact" class="section">
-      <div class="content">
+    <section id="contact" class="contact-section">
+      <div class="container">
         <h2>Contact</h2>
-        <form id="contactForm">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Send</button>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send</button>
         </form>
         <div class="contact-info">
-          <p>Email: dhruvil@example.com</p>
-          <p>Phone: +1234567890</p>
+          <p>Email: <a href="mailto:meniyadhruvil@gmail.com">meniyadhruvil@gmail.com</a></p>
+          <p>Phone: <a href="tel:+919173191212">+91 9173191212</a></p>
           <div class="social-links">
-            <a href="https://twitter.com"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
-            <a href="https://linkedin.com"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i> twitter</a>
+            <a href="https://www.linkedin.com/in/dhruvil-meniya-02287922b" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin</a>
             <!-- Add more social links as needed -->
           </div>
         </div>
       </div>
     </section>
+
   </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Meniya Dhruvil. All rights reserved.</p>
+    </div>
+  </footer>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
+  <script src="script.js"></script>
 
-      // Popup confirmation message
-      if (confirm("Are you sure you want to submit this form?")) {
-        // If user confirms, submit the form
-        this.submit();
-      }
-    });
-  </script>
+
 </body>
+
 </html>
